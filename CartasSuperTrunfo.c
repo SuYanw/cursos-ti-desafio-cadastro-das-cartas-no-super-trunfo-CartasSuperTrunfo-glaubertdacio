@@ -11,7 +11,7 @@ int main() {
     int populacao, pturisticos;
 
     // declarando numeros flutuantes
-    float popl, area, pib;
+    float popl, area, pib, denspopulacional, pipcapta;
 
 
     printf("Informe os dados da Carta1:\n");
@@ -30,7 +30,7 @@ int main() {
     scanf("%d", &populacao);
 
     printf("Area: ");
-    scanf("%f", &popl);
+    scanf("%f", &area);
 
     printf("PIB: ");
     scanf("%f", &pib);
@@ -47,11 +47,18 @@ int main() {
 
     printf("População: %d\n", populacao);
 
-    printf("Área: %f km²\n", area);
+    printf("Área: %.2f km²\n", area);
 
-    printf("PIB: %f bilhões de reais\n", pib);
+    printf("PIB: %.2f bilhões de reais\n", pib);
 
     printf("Número de Pontos Turísticos: %d\n", pturisticos);
+
+    denspopulacional = (float)populacao / area;
+
+    printf("Densidade Populacional: %.2f\n", denspopulacional);
+
+    pipcapta = (float) populacao / pib;
+    printf("PIB per Capita: %.2f\n", pipcapta);
 
     printf("\n\n\n\n");
 
@@ -71,7 +78,7 @@ int main() {
     scanf("%d", &populacao);
 
     printf("Area: ");
-    scanf("%f", &popl);
+    scanf("%f", &area);
 
     printf("PIB: ");
     scanf("%f", &pib);
@@ -88,10 +95,18 @@ int main() {
 
     printf("População: %d\n", populacao);
 
-    printf("Área: %f km²\n", area);
+    printf("Área: %.2f km²\n", area);
 
-    printf("PIB: %f bilhões de reais\n", pib);
+    printf("PIB: %.2f bilhões de reais\n", pib);
 
     printf("Número de Pontos Turísticos: %d\n", pturisticos);
+
+    denspopulacional = (float)populacao / area;
+
+    printf("Densidade Populacional: %.2f\n", denspopulacional);
+
+    pipcapta = (float) populacao / pib;
+    printf("PIB per Capita: %.2f\n", pipcapta);
+    
     return 0;
 }
