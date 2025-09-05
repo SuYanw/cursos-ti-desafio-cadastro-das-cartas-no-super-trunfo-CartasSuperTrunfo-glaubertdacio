@@ -5,8 +5,8 @@ int main() {
 
 
     // declarando strings
-    char estado1[5], codigo1[5], cidade1[50];
-    char estado2[5], codigo2[5], cidade2[50];
+    char estado1[1], codigo1[4], cidade1[50];
+    char estado2[1], codigo2[4], cidade2[50];
 
 
     // declarandos numeros inteiros
@@ -123,37 +123,6 @@ int main() {
 
     printf("\n\n\nComparativos:\n");
 
-    if(populacao1 > populacao2){
-        printf("População: Carta 1 venceu (1)\n");
-    }else{
-        printf("População: Carta 2 venceu (0)\n");
-    }
 
-    if(area1 > area2){
-        printf("Área: Carta 1 venceu (1)\n");
-    }else{
-        printf("Área: Carta 2 venceu (0)\n");
-    }
-
-    if(pib1 > pib2){
-        printf("PIB: Carta 1 venceu (1)\n");
-    }else{
-        printf("PIB: Carta 2 venceu (0)\n");
-    }
-    if(pturisticos1 > pturisticos2 ){
-        printf("Pontos Turísticos: Carta 1 venceu (1)\n");
-    }else{
-        printf("Densidade Populacional: Carta 2 venceu (0)\n");
-    }
-    if(pipcapta1 > pipcapta2){
-        printf("PIB per Capita: Carta 1 venceu (1)\n");
-    }else{
-        printf("PIB per Capita: Carta 2 venceu (0)\n");
-    }
-    if(poder1>poder2){
-        printf("Super Poder: Carta 1 venceu (1)\n");
-    }else{
-        printf("Super Poder: Carta 2 venceu (0)\n");
-    }
     return 0;
 }
